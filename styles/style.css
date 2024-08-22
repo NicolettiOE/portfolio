@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-primaria: #2c3639;
+    --cor-segundaria: #dcd7c9;
+    --cor-terciaria: #a27b5c;
+    --cor-hover: #3f4e4f;
+
+    --fonte-primaria: "Edu VIC WA NT Beginner", cursive;
+    --fonte-segundaria:'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria);
+}
+
+
+
+img[src="./assets/rafa.png"] {
+    width: 350px;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.imagem-perfil {
+    width: 50%;
+    height: auto; /* Mantém a proporção da imagem */
+    border: 5px outset var(--cor-terciaria); /* Adiciona a borda estilizada */
+    margin-left: 40px; /* Adiciona uma margem à esquerda para criar espaço entre a imagem e o texto */
+
+}
+
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display:flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family:var(--fonte-segundaria);
+    font-size: 1,12rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center; /* Define o espaçamento dos elementos na vertical */
+    justify-content: space-between; /* Define o espaçamento dos elementos na horizontal */
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1,25rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 200;
+    font-size: 1,87rem;
+}
+
+.apresentacao__links__links {
+    /* background-color: #22d4fd;  */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 5px outset var(--cor-terciaria);
+    width: 350px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1,5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-segundaria);
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links__links:hover{
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 10px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family:var(--fonte-segundaria);
+    font-size: 0,75rem;
+    font-weight: 400;
+}
